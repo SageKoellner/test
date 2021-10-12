@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no.</title>
+</head>
+<body>
+    <!-- title -->
+    <h1>Work money counter</h1>
+    
+    <div id="input">
+        <!-- Timing -->
+        <h2>Times</h2>
+
+        <!-- drop down time start -->
+
+        <!-- Hour -->
+        <select name="startHour" id="startHour">
+            <option value="0">12am</option>
+            <option value="1">1am</option>
+            <option value="2">2am</option>
+            <option value="3">3am</option>
+            <option value="4">4am</option>
+            <option value="5">5am</option>
+            <option value="6">6am</option>
+            <option value="7">7am</option>
+            <option value="8">8am</option>
+            <option value="9">9am</option>
+            <option value="10">10am</option>
+            <option value="11">11am</option>
+            <option value="12">12pm</option>
+            <option value="13">1pm</option>
+            <option value="14">2pm</option>
+            <option value="15">3pm</option>
+            <option value="16">4pm</option>
+            <option value="17">5pm</option>
+            <option value="18">6pm</option>
+            <option value="19">7pm</option>
+            <option value="20">8pm</option>
+            <option value="21">9pm</option>
+            <option value="22">10pm</option>
+            <option value="23">11pm</option>
+        </select>
+
+        <!-- Minute -->
+        <select name="startMin" id="startMin">
+            <option value="0">0min</option>
+            <option value="0.25">15min</option>
+            <option value="0.5">30min</option>
+            <option value="0.75">45min</option>
+        </select>
+
+        <!-- drop down time end -->
+        <select name="endHour" id="endHour">
+            <option value="0">12am</option>
+            <option value="1">1am</option>
+            <option value="2">2am</option>
+            <option value="3">3am</option>
+            <option value="4">4am</option>
+            <option value="5">5am</option>
+            <option value="6">6am</option>
+            <option value="7">7am</option>
+            <option value="8">8am</option>
+            <option value="9">9am</option>
+            <option value="10">10am</option>
+            <option value="11">11am</option>
+            <option value="12">12pm</option>
+            <option value="13">1pm</option>
+            <option value="14">2pm</option>
+            <option value="15">3pm</option>
+            <option value="16">4pm</option>
+            <option value="17">5pm</option>
+            <option value="18">6pm</option>
+            <option value="19">7pm</option>
+            <option value="20">8pm</option>
+            <option value="21">9pm</option>
+            <option value="22">10pm</option>
+            <option value="23">11pm</option>
+        </select>
+
+        <!-- Minute -->
+        <select name="endMin" id="endMin">
+            <option value="0">0min</option>
+            <option value="0.25">15min</option>
+            <option value="0.5">30min</option>
+            <option value="0.75">45min</option>
+        </select>
+
+        <!-- Hourly pay -->
+        <h2>Hourly Pay</h2>
+        <input type="number" id='hourRate'>
+
+        <!-- Submit button -->
+        <button onclick='start()'>Submit</button>
+    </div>
+
+    <div id="output">
+        <!-- Pay -->
+        <h2>Pay Rates</h2>
+
+        <!-- daily -->
+        <h3>Daily Pay (1 day)</h3>
+        <p id='daily'>N/A</p>
+
+        <!-- weekends -->
+        <h3>Weekend Pay (2 day)</h3>
+        <p id="weekEnd">N/A</p>
+
+        <!-- weekly -->
+        <h3>Weekly Pay (5 day)</h3>
+        <p id='weekly'>N/A</p>
+
+        <!-- biweekly -->
+        <h3>Paycheck (10 day)</h3>
+        <p id='biweekly'>N/A</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

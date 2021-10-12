@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* start of desktop styles */
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    
+}
+    
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+
+}
+
+@media screen and (max-width: 479px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #landing{
+        background-image: url('landingbackground.jpg');
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        height: 100vh; 
+        width:  100vw;
+    }
+    #landing_content{
+        color: white;
+        width: 90vw;
+        margin: auto;
+        padding-top: 30vh;
+        text-align: center;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 2fr);
+    }
+
+    #landing_logo, #landing_title, #landing_slogan, #landing_continue_button{
+        grid-row: span 1;
+        margin: auto;
+        font-family: 'Dancing Script', cursive;
+    }
+    #landing_title{
+        border-bottom: 2px solid white;
+        padding-bottom: 3px;
+    }
+
+    #landing_continue_button{
+        color: white;
+        width: 150px;
+        height:30px;
+        border-radius: 50px;
+        border-width: 3px;
+        border-color: white;
+        background-color: transparent;
+        box-shadow: 0 0;
+    }
+}

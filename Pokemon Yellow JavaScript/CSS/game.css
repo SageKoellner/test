@@ -1,0 +1,9 @@
+#display {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(9, 50px);
+}
+.displayCell {
+    grid-column: span 1;
+    background-color: black;
+}
